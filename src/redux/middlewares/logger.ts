@@ -1,5 +1,6 @@
 import { Middleware } from "@reduxjs/toolkit";
 
+//curying function of javascript
 const logger: Middleware = (store) => (next) => (action) => {
   console.log("Current State", store.getState());
   console.log("Action", action);
